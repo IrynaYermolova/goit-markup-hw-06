@@ -774,8 +774,75 @@ h1,h2,h3,h4,h5,ul,li,p {
   .footer-link:hover,
   .footer-link:focus {
     background-color: var(--accent-color);
+  }
+  .footer-speaker-container {
+    display: inline-block;
+    align-items: baseline;
+    margin-left: 70px;
   } 
+
+  .footer-speaker-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-bg-color);
+    margin-bottom: 20px;
+  }
+  .footer-input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    width: 358px;
+    height: 50px;
+    background-color: #2F303A;
+    border: none;
+  }
+  .footer-label {
+    /* border: none; */
+  }
+   .footer-speaker-list {
+    display: flex;
+    gap: 12px; 
+   }
+  .speaker-list-item {
     
+  }
+  
+  .footer-speaker-form {
+   display: flex; 
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+    border-radius: 4px;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  }
+  .footer-btn {
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    border-radius: 4px;
+    color: var(--main-bg-color);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+  }
+  .footer-btn-icon {
+    margin-left: 10px;
+    fill: var(--main-bg-color);
+  }
 
   
   
@@ -907,7 +974,7 @@ h1,h2,h3,h4,h5,ul,li,p {
 .list-item-link:focus::before {
   /* border: 1px solid #EEEEEE; */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  /* transition: transform 250ms  cubic-bezier(0.4, 0, 0.2, 1); */
+  
 }
 
 /* анимация карточек */
@@ -1006,4 +1073,43 @@ h1,h2,h3,h4,h5,ul,li,p {
 }
 .modal-icon {
   fill:#000000;
+}
+
+/* ОФОРМЛЕНИЕ МОДАЛЬНОГО ОКНА */
+
+.form {
+  padding-right: 40px;
+  padding-left: 40px;
+  width: 528px;
+}
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  /* margin-bottom: 12px; */
+}
+.form-field {
+  position: relative;
+  /* margin-top: 12px; */
+  /* display: block; */
+  margin-top: 30px;
+}
+.form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform:translateY(-100%);
+ 
+}
+.form-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
