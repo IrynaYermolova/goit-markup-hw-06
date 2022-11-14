@@ -1145,14 +1145,11 @@ h1,h2,h3,h4,h5,ul,li,p {
 }
 .form-icon {
   position: absolute;
-
   bottom: 0;
-  left:0;
-
-  
+  left: 0;
   fill: #212121;
   border: none;
-  transform: translateX(15px) translateY(-10px);
+  transform: translateX(15px) translateY(-14px);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input {
@@ -1235,11 +1232,14 @@ margin-bottom: 10px;
 .form-checkbox {
   appearance: none;
 }
-
+.check-form-field {
+  /* padding-left: 54px; */
+}
 .form-checkbox-icon {
   /* display: inline-block; */
   /* align-items: center;
   justify-content: center; */
+  
 } 
 .form-label-checkbox {
   display: flex;
